@@ -1,0 +1,21 @@
+{
+    "name": "AI-DeepLearning-Env",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    // GPUを認識させるために必須の設定
+    "runArgs": [
+        "--gpus", "all"
+    ],
+    // コンテナ内で自動で入れたい拡張機能
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    // コンテナ内の作業ディレクトリ
+    "workspaceFolder": "/workspace"
+}

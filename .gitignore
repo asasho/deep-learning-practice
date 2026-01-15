@@ -1,0 +1,53 @@
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 仮想環境
+venv/
+env/
+ENV/
+
+# IDE関連
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# データファイル - data/以下のファイルは無視するが、ディレクトリ構造は保持
+# data/ディレクトリ内のすべてのファイルを無視
+data/**/*
+
+# ただし、ディレクトリ構造は保持
+# data/内のPythonファイルは保持（例: mnist.py）
+!data/**/*.py
+
+# ディレクトリ構造を維持するための.gitkeepファイルは保持
+!data/**/.gitkeep
+
+# 明示的に一般的なデータファイルタイプを無視（冗長だが明示的）
+data/**/*.pkl
+data/**/*.gz
+data/**/*.tar.gz
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.xml
+data/**/*.json
+data/**/*.meta
+data/**/*.html
+data/**/*.ubyte
+data/**/*.idx3-ubyte
+data/**/*.idx1-ubyte
+data/**/data_batch_*
+data/**/test_batch
+data/**/batches.meta
+data/**/readme.html
+

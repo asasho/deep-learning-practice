@@ -1,0 +1,15 @@
+# --- PyTorch関連 ---
+torch
+torchvision
+torchsummary
+
+# --- データ分析・評価指標 ---
+scikit-learn
+pandas
+numpy
+
+# --- データ分析・可視化 ---
+matplotlib
+
+# --- TensorFlow関連 ---
+tensorflow
