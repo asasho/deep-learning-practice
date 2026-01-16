@@ -4,11 +4,20 @@ __pycache__/
 *$py.class
 *.so
 .Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook関連
+.ipynb_checkpoints/
+*.ipynb_checkpoints
 
 # 仮想環境
 venv/
 env/
 ENV/
+.venv/
 
 # IDE関連
 .vscode/
@@ -16,10 +25,14 @@ ENV/
 *.swp
 *.swo
 *~
+.project
+.pydevproject
+.settings/
 
 # OS関連
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # データファイル - data/以下のファイルは無視するが、ディレクトリ構造は保持
 # data/ディレクトリ内のすべてのファイルを無視
@@ -32,22 +45,36 @@ data/**/*
 # ディレクトリ構造を維持するための.gitkeepファイルは保持
 !data/**/.gitkeep
 
-# 明示的に一般的なデータファイルタイプを無視（冗長だが明示的）
-data/**/*.pkl
-data/**/*.gz
-data/**/*.tar.gz
+# 明示的に一般的なデータファイルタイプを無視
+# 画像ファイル
 data/**/*.jpg
 data/**/*.jpeg
 data/**/*.png
-data/**/*.xml
-data/**/*.json
-data/**/*.meta
-data/**/*.html
+data/**/*.gif
+data/**/*.bmp
+data/**/*.tiff
+data/**/*.webp
+
+# 圧縮ファイル
+data/**/*.pkl
+data/**/*.gz
+data/**/*.tar.gz
+data/**/*.zip
+data/**/*.rar
+data/**/*.7z
+
+# データセットファイル
 data/**/*.ubyte
 data/**/*.idx3-ubyte
 data/**/*.idx1-ubyte
 data/**/data_batch_*
 data/**/test_batch
 data/**/batches.meta
+
+# その他のデータファイル
+data/**/*.xml
+data/**/*.json
+data/**/*.meta
+data/**/*.html
 data/**/readme.html
 
